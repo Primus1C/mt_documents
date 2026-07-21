@@ -18,7 +18,7 @@
 	- [[📄Установка цен (продажи)\|📄Установка цен (продажи)]]
 ****
 - **Разработчику**
-	 - **API**  *(2026-07-16)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
+	 - **API**  *(2026-07-20)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
 		- [[API/Общие сведения\|Общие сведения]]
 		- Классификаторы (чтение)
 			- [[API/Операторы склада\|Операторы склада]]
