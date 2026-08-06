@@ -36,7 +36,7 @@
 	- [[Отчеты/Контроль затрат периода\|Контроль затрат периода]]
 ****
 - **Разработчику**
-	 - **API**  *(2026-08-05)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
+	 - **API**  *(2026-08-06)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
 		- [[API/Общие сведения\|Общие сведения]]
 		- Классификаторы (чтение)
 			- [[API/Операторы склада\|Операторы склада]]
