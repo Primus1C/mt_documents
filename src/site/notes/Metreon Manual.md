@@ -43,7 +43,7 @@
 	- [[Документы/Задачи разработчику\|Задачи разработчику]]
 ****
 - **Разработчику**
-	 - **API**  *(2026-09-11)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
+	 - **API**  *(2026-09-12)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
 		- [[API/Общие сведения\|Общие сведения]]
 		- Классификаторы (чтение)
 			- [[API/Операторы склада\|Операторы склада]]

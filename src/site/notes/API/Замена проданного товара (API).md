@@ -74,7 +74,7 @@ GET /replace?deliveryNumber=000000456&sellerCode=1201
 | `deliveryNumber` | `deliveryNo`, `delivery` | Номер расходной накладной-основания |
 | `date` | — | Дата документа (`yyyy-MM-dd`) — уточнение |
 | `sellerCode` | `customerCode`, `counterpartyCode`, `code` | Код покупателя (опционально) |
-| `alias` | `seller`, `customer`, `counterparty`, `name` | Псевдоним / наименование покупателя |
+| `customer` | `seller`, `counterparty`, `name` | Наименование покупателя |
 
 Достаточно одного из номеров. Помеченные на удаление не возвращаются → **404**. Несколько совпадений → **400**.
 
@@ -90,7 +90,7 @@ GET /replace?dateFrom=2026-08-01&dateTo=2026-08-31
 | Параметр | Синонимы | Описание |
 |----------|----------|----------|
 | `sellerCode` | `customerCode`, `counterpartyCode`, `code` | Код покупателя |
-| `alias` | `seller`, `customer`, `counterparty`, `name` | Псевдоним / наименование |
+| `customer` | `seller`, `counterparty`, `name` | Наименование покупателя |
 | `dateFrom` | `from` | Начало периода (`yyyy-MM-dd`) |
 | `dateTo` | `to` | Конец периода (`yyyy-MM-dd`) |
 
@@ -176,7 +176,7 @@ GET /replace?dateFrom=2026-08-01&dateTo=2026-08-31
 | `deliveryNumber` | `delivery`, `deliveryNo` | да | Номер **расходной накладной** |
 | `items` | — | да | Массив пар замены |
 | `date` | — | нет | Дата документа (`yyyy-MM-dd`); по умолчанию — текущая |
-| `employeeCode` / `employeePin` | — | по настройкам УЗ | Идентификация сотрудника |
+| `employeeCode` / `employeePin` | — | по настройкам УЗ | Сборщик (`Сборщик` в документе); в теле или query string |
 
 #### Элемент `items[]`
 
