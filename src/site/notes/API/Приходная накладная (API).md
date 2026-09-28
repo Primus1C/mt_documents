@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/api/prihodnaya-nakladnaya-api/","dg-note-properties":{}}
 ---
 
-# StockAPI — Приходная накладная (`/incomingwaybiils`)
+# StockAPI — Приходная накладная (`/incomingwaybills`)
 
 HTTP-сервис **StockAPI**: создание приходных накладных (документ `ПриходнаяНакладная`, eng. *Incoming waybill*).
 
@@ -28,10 +28,10 @@ X-Api-Key: <токен учётной записи интеграции>
 
 | Метод | URL | Назначение |
 |-------|-----|------------|
-| GET | `/incomingwaybiils` | Одна приходная или список с пагинацией |
-| POST | `/incomingwaybiils` | Создание и проведение приходной |
-| PATCH | `/incomingwaybiils` | Полная замена шапки и табличной части существующей приходной |
-| PUT | `/incomingwaybiils` | Добавление позиций в существующую приходную |
+| GET | `/incomingwaybills` | Одна приходная или список с пагинацией |
+| POST | `/incomingwaybills` | Создание и проведение приходной |
+| PATCH | `/incomingwaybills` | Полная замена шапки и табличной части существующей приходной |
+| PUT | `/incomingwaybills` | Добавление позиций в существующую приходную |
 
 ---
 
@@ -46,22 +46,22 @@ X-Api-Key: <токен учётной записи интеграции>
 
 ---
 
-## GET `/incomingwaybiils`
+## GET `/incomingwaybills`
 
 **Назначение:** получить одну приходную накладную или список (поставщики из ТЧ «Поставщики» учётной записи). Параметры и проверки — **как у `GET /invoices`**.
 
 **Запрос:**  
-`GET /trade/hs/stock/incomingwaybiils?...`
+`GET /trade/hs/stock/incomingwaybills?...`
 
 ### Режим одного документа
 
 Указан номер документа 1С и/или номер поставщика:
 
 ```
-GET /incomingwaybiils?number=000001234
-GET /incomingwaybiils?supplierNumber=INV-7788
-GET /incomingwaybiils?number=000001234&date=2026-08-25
-GET /incomingwaybiils?supplierNumber=INV-7788&sellerCode=1201
+GET /incomingwaybills?number=000001234
+GET /incomingwaybills?supplierNumber=INV-7788
+GET /incomingwaybills?number=000001234&date=2026-08-25
+GET /incomingwaybills?supplierNumber=INV-7788&sellerCode=1201
 ```
 
 | Параметр | Синонимы | Описание |
@@ -79,8 +79,8 @@ GET /incomingwaybiils?supplierNumber=INV-7788&sellerCode=1201
 Номер не указан. Фильтр по поставщику и/или периоду:
 
 ```
-GET /incomingwaybiils?sellerCode=1201&dateFrom=2026-08-01&dateTo=2026-08-31&page=1&pageSize=50
-GET /incomingwaybiils?dateFrom=2026-08-01&dateTo=2026-08-31
+GET /incomingwaybills?sellerCode=1201&dateFrom=2026-08-01&dateTo=2026-08-31&page=1&pageSize=50
+GET /incomingwaybills?dateFrom=2026-08-01&dateTo=2026-08-31
 ```
 
 | Параметр | Синонимы | Описание |
@@ -152,12 +152,12 @@ GET /incomingwaybiils?dateFrom=2026-08-01&dateTo=2026-08-31
 
 ---
 
-## POST `/incomingwaybiils`
+## POST `/incomingwaybills`
 
 **Назначение:** создать и провести приходную накладную с партиями и остатками (флаг «Окончательно»).
 
 **Запрос:**  
-`POST /trade/hs/stock/incomingwaybiils`
+`POST /trade/hs/stock/incomingwaybills`
 
 ### Поля заголовка документа
 
@@ -305,7 +305,7 @@ GET /incomingwaybiils?dateFrom=2026-08-01&dateTo=2026-08-31
 
 ---
 
-## PATCH /incomingwaybiils
+## PATCH /incomingwaybills
 
 **Назначение:** изменить существующую приходную: те же обязательные поля, что у POST (поставщик, склад, валюта, `items`), с **полной заменой** табличной части. Документ при необходимости отменяется и проводится заново с флагом **Окончательно**.
 
@@ -328,7 +328,7 @@ GET /incomingwaybiils?dateFrom=2026-08-01&dateTo=2026-08-31
 
 ---
 
-## PUT /incomingwaybiils
+## PUT /incomingwaybills
 
 **Назначение:** добавить строки в **существующую** приходную (шапка и уже введённые строки сохраняются, кроме явно переданной даты документа).
 
