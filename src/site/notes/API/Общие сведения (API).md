@@ -27,7 +27,7 @@
 
 ### Пагинация
 
-Используется в [[API/Остатки с ценами\|balances]], [[API/Остатки без цен\|leftover]], [[API/Клиенты\|counterparties]], [[API/Заказы📌\|orders]] (режим списка), [[API/Ассортимент\|goods]], [[API/Инвойс (API)\|invoices]], [[API/Приходная накладная (API)\|incomingwaybills]], [[API/Замена проданного товара (API)\|replace]].  
+Используется в [[API/Остатки с ценами\|balances]], [[API/Остатки без цен\|leftover]], [[API/Клиенты\|counterparties]], [[API/Заказы📌\|orders]] (режим списка), [[API/Товары и ассортимент\|goods]], [[API/Инвойс (API)\|invoices]], [[API/Приходная накладная (API)\|incomingwaybills]], [[API/Замена проданного товара (API)\|replace]].  
   
 В запросе отправляем :  
 
