@@ -17,7 +17,7 @@
 
     — запросы с телом: JSON, заголовок Content-Type: application/json
 
-    — ответы: JSON (кроме [[API/Документы отгрузки\|delivery-notes]] — бинарный файл)
+    — ответы: JSON (кроме [[API/Документы отгрузки (API)\|delivery-notes]] — бинарный файл)
 
     — коды справочников (itemCode, warehouseCode, counterpartyCode) — строки: "4", "42"
 
@@ -27,7 +27,7 @@
 
 ### Пагинация
 
-Используется в [[API/Остатки с ценами\|balances]], [[API/Остатки без цен\|leftover]], [[API/Клиенты\|counterparties]], [[API/Заказы📌\|orders]] (режим списка), [[API/Товары и ассортимент\|goods]], [[API/Инвойс (API)\|invoices]], [[API/Приходная накладная (API)\|incomingwaybills]], [[API/Замена проданного товара (API)\|replace]].  
+Используется в [[API/Остатки с ценами (API)\|balances]], [[API/Остатки без цен (API)\|leftover]], [[API/Клиенты (API)\|counterparties]], [[API/Заказы (API)📌\|orders]] (режим списка), [[API/Товары и ассортимент (API)\|goods]], [[API/Инвойс (API)\|invoices]], [[API/Приходная накладная (API)\|incomingwaybills]], [[API/Замена проданного товара (API)\|replace]].  
   
 В запросе отправляем :  
 
