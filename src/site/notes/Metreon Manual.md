@@ -45,7 +45,7 @@
 	- [[Документы/Задачи разработчику\|Задачи разработчику]]
 ****
 - **Разработчику**
-	 - **API**  *(2026-01-11)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
+	 - **API**  *(2026-06-11)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
 		- [[API/Общие сведения (API)\|Общие сведения (API)]]
 		- Классификаторы (чтение)
 			- [[API/Операторы склада (API)\|Операторы склада (API)]]
@@ -66,6 +66,7 @@
 		- [[API/Замена проданного товара (API)\|Замена проданного товара]]
 		- [[API/Инвойс (API)\|Инвойс (входящий)]]
 		- [[API/Приходная накладная (API)\|Приходная накладная (API)]]
+		- [[API/Отправки AWB (API)\|Отправки AWB (API)]]
 		- [[API/Серии для сборки заказа (API)\|Серии для сборки заказа (API)]]
 		- [[API/Web Hooks\|Web Hooks]]
 	- **Функционал 1С**
