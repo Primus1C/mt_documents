@@ -399,4 +399,5 @@ DELETE /incomingwaybills?supplierNumber=INV-7788&sellerCode=1201
 | GET   | `/warehouses` | [[API/Склады (API)\|Склады]] учётной записи                                      |
 | GET   | `/goods`      | Номенклатура с остатками на складах учётной записи                           |
 | GET   | `/currencies` | [[API/Валюты (API)\|Валюты (API)]]                                                             |
-| GET   | `/invoices`   | [[API/Заказы (API)📌\|Инвойсы закупки]]                                          |
+| GET   | `/invoices`   | [[API/Инвойс (API)\|Инвойсы закупки]]                                            |
+| DELETE | `/invoices`  | Удаление позиций инвойса закупки; при полном составе `items` — пометка на удаление |
