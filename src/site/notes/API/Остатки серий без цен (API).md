@@ -109,6 +109,7 @@ GET /leftoverSeries?warehouseCode=1&search=ABC123&grouped=true
 |------|----------|
 | `item` | Наименование номенклатуры |
 | `itemCode` | Код номенклатуры (строка) |
+| `productRange` | Наименование ассортимента номенклатуры; пустая строка, если не заполнен |
 | `serial` | Серия (`Партии.Серия`) |
 
 ```json
@@ -119,6 +120,7 @@ GET /leftoverSeries?warehouseCode=1&search=ABC123&grouped=true
     {
       "item": "Apple iPhone 15 128GB Black",
       "itemCode": "100500",
+      "productRange": "",
       "serial": "ABC123"
     }
   ]
@@ -133,6 +135,7 @@ GET /leftoverSeries?warehouseCode=1&search=ABC123&grouped=true
 |------|----------|
 | `item` | Наименование номенклатуры |
 | `itemCode` | Код номенклатуры (строка) |
+| `productRange` | Наименование ассортимента номенклатуры; пустая строка, если не заполнен |
 | `serials` | Массив строк — серии без дубликатов, порядок как в выборке |
 
 ```json
@@ -143,6 +146,7 @@ GET /leftoverSeries?warehouseCode=1&search=ABC123&grouped=true
     {
       "item": "Apple iPhone 15 128GB Black",
       "itemCode": "100500",
+      "productRange": "",
       "serials": ["ABC123", "DEF456"]
     }
   ]

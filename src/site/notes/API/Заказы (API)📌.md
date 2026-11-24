@@ -281,7 +281,7 @@ GET /orders?customerCode=1001&dateFrom=2026-07-01&dateTo=2026-07-31&page=1&pageS
 | `status`, `statusSetBy`, `statusDate` | Основной статус заказа |
 | `blocked`, `cancelled`, `readyToShip` | Признаки (см. [Статусы заказа](#статусы-заказа)) |
 | `consignment` | Заказ комиссионера (вид заказа `ЗаказКомиссионера`) |
-| `items[]` | Позиции: `item`, `itemCode`, `qty`, `price`, `principialPrice` (только если цена комитента заполнена) |
+| `items[]` | Позиции: `item`, `itemCode`, `productRange`, `qty`, `price`, `principialPrice` (только если цена комитента заполнена) |
 
 ---
 
@@ -378,6 +378,7 @@ GET /series?incomingNumber=PO-2026-001
   "items": [
     {
       "itemCode": "12345",
+      "productRange": "",
       "serials": ["SN001", "SN002"]
     }
   ]
@@ -524,7 +525,7 @@ GET /return?returnNumber=000000045&date=2026-07-10
 | `customer`, `customerCode`, `currency` | Контрагент и валюта (из строк) |
 | `deliveryNumber` | Расходная накладная |
 | `orderNumber`, `incomingNumber` | Заказ-основание |
-| `items[]` | `item`, `itemCode`, `sku`, `qty`, `price`, `amount`, `serial` (если есть), `reason` (причина возврата, если заполнена) |
+| `items[]` | `item`, `itemCode`, `sku`, `qty`, `price`, `amount`, `productRange`, `serial` (если есть), `reason` (причина возврата, если заполнена) |
 
 ---
 
@@ -576,7 +577,7 @@ GET /delivery-notes?deliveryNumber=РН-000123&format=excel&serials=without
 | `format` | — | `pdf` (по умолчанию), `excel` / `xlsx` / `xls`, **`json`** |
 | `serials` | — | `with` (по умолчанию) или `without`; также `true`/`false`, `1`/`0`, `yes`/`no` |
 
-При `format=json` ответ **200** — JSON-объект накладной (не файл): `number`, `date`, `posted`, `customer`, `customerCode`, `warehouse`, `warehouseCode`, `currency`, `amount`, `orderNumber`, `incomingNumber`, `returnNumber`, `returnDate`, `items[]` (`item`, `itemCode`, `sku`, `qty`, `price`, `amount`, при `serials=with` — `serial`).
+При `format=json` ответ **200** — JSON-объект накладной (не файл): `number`, `date`, `posted`, `customer`, `customerCode`, `warehouse`, `warehouseCode`, `currency`, `amount`, `orderNumber`, `incomingNumber`, `returnNumber`, `returnDate`, `items[]` (`item`, `itemCode`, `sku`, `qty`, `price`, `amount`, `productRange`, при `serials=with` — `serial`).
 
 Иначе ответ — бинарный файл (`application/pdf` или Excel) с заголовком `Content-Disposition: attachment`.
 
@@ -803,12 +804,14 @@ X-Api-Key: your-api-token-here
         {
           "item": "Товар A",
           "itemCode": "12345",
+          "productRange": "",
           "qty": 2,
           "price": 150
         },
         {
           "item": "Товар B",
           "itemCode": "67890",
+          "productRange": "",
           "qty": 1,
           "price": 320.5
         }
@@ -1025,6 +1028,7 @@ X-Api-Key: your-api-token-here
   "items": [
     {
       "itemCode": "12345",
+      "productRange": "",
       "serials": ["SN001", "SN002"]
     }
   ]

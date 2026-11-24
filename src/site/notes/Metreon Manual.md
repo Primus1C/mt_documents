@@ -48,7 +48,7 @@
 	- [[Документы/Задачи разработчику\|Задачи разработчику]]
 ****
 - **Разработчику**
-	 - **API**  *(2026-11-18)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
+	 - **API**  *(2026-11-24)*  ![wired-gradient-1327-api-symbol-hover-pinch.gif](/img/user/Assets/wired-gradient-1327-api-symbol-hover-pinch.gif)
 		- [[API/Общие сведения (API)\|Общие сведения (API)]]
 		- Классификаторы (чтение)
 			- [[API/Ответственные лица (API)\|Ответственные лица (API)]]

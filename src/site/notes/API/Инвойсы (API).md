@@ -156,6 +156,7 @@ GET /invoices?eta=2026-09-01
           "item": "iPhone 15",
           "itemCode": "10045",
           "itemSku": "",
+          "productRange": "",
           "qty": 2,
           "price": 350.5,
           "amount": 701
@@ -425,6 +426,7 @@ Content-Type: application/vnd.ms-excel
       "item": "iPhone 15",
       "itemCode": "10045",
       "itemSku": "",
+      "productRange": "",
       "qty": 2,
       "price": 350.5,
       "amount": 701
@@ -433,6 +435,7 @@ Content-Type: application/vnd.ms-excel
       "item": "Cable USB-C",
       "itemCode": "20010",
       "itemSku": "CABLE-USBC",
+      "productRange": "",
       "qty": 5,
       "price": 12,
       "amount": 60
@@ -446,6 +449,7 @@ Content-Type: application/vnd.ms-excel
 | `replaced` | `true`, если выполнен upsert существующего инвойса |
 | `amount` | Сумма документа (`Сумма`, в валюте учёта закупки с учётом курса) |
 | `price` в `items` | `ЦенаИнвойса` (валюта инвойса) |
+| `productRange` в `items` | Наименование ассортимента номенклатуры; пустая строка, если не заполнен |
 
 Сведений о прикреплённых файлах в ответ нет. Пустая `ДатаИнспекции` / `ДатаНаСкладеОтправителя` / незаполненный `ЛокальныйСтатус` / `Менеджер` в ответе — пустые строки. `note` — текущее `Примечание`. `eta` — `ДатаНаСкладеОтправителя`.
 

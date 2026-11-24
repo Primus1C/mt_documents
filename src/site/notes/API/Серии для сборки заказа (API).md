@@ -17,6 +17,8 @@
 
 **Ответ**
 
+Элемент `items[]`: `itemCode` — код номенклатуры, `productRange` — наименование ассортимента (пустая строка, если не заполнен), `serials` — серии на складе заказа.
+
 ```json
 	{
 	"orderNumber": "00001234",
@@ -24,10 +26,12 @@
 	"items": [
 		{
 			"itemCode": "5678",
+			"productRange": "",
 			"serials": ["SN001", "SN002", "SN003"]
 		},
 		{
 			"itemCode": "4570",
+			"productRange": "",
 			"serials": ["SN500", "SN501"]
 		}
 	]

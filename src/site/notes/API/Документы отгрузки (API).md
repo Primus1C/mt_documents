@@ -22,7 +22,7 @@
 GET /delivery-notes?number=РН-000123&format=pdf&serials=without
 
 **Успешный ответ**
-Бинарный PDF-файл, или JSON. В JSON (`format=json`) поле `items[].price` — цена строки расходной накладной: при отгрузке через `POST /delivery` с `items` у одного `itemCode` могут быть разные `price` (как в строках заказа).
+Бинарный PDF-файл, или JSON. В JSON (`format=json`) поле `items[].price` — цена строки расходной накладной: при отгрузке через `POST /delivery` с `items` у одного `itemCode` могут быть разные `price` (как в строках заказа). В `items[]` также есть `productRange` — наименование ассортимента номенклатуры (пустая строка, если не заполнен).
 
 
 # POST `/api/v1/delivery`

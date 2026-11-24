@@ -120,6 +120,7 @@ GET /replace?dateFrom=2026-08-01&dateTo=2026-08-31
         {
           "item": "iPhone 15 128 Black",
           "itemCode": "10001",
+          "productRange": "",
           "serial": "SN-RETURN-001",
           "itemReplace": "iPhone 15 128 Blue",
           "itemCodeReplace": "10002",
@@ -139,7 +140,8 @@ GET /replace?dateFrom=2026-08-01&dateTo=2026-08-31
 | `customer` / `customerCode` | Покупатель |
 | `warehouse` / `warehouseCode` | Склад (из РН) |
 | `posted` | Проведён |
-| `items[]` | Пары: возврат (`item*` + `serial`) и выдача взамен (`item*Replace` + `serialReplace`) |
+| `items[]` | Пары: возврат (`item*` + `productRange` + `serial`) и выдача взамен (`item*Replace` + `serialReplace`) |
+| `productRange` | Наименование ассортимента товара возврата; пустая строка, если не заполнен |
 
 Ошибки: **400** (некорректные параметры), **404** (не найден).
 
@@ -215,6 +217,7 @@ GET /replace?dateFrom=2026-08-01&dateTo=2026-08-31
     {
       "item": "iPhone 15 128 Black",
       "itemCode": "10001",
+      "productRange": "",
       "serial": "SN-RETURN-001",
       "itemReplace": "iPhone 15 128 Blue",
       "itemCodeReplace": "10002",

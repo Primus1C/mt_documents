@@ -94,6 +94,7 @@ GET /awbshipment?dateFrom=2026-08-01&dateTo=2026-08-31&page=1&pageSize=50
               "item": "iPhone 15",
               "itemCode": "10045",
               "itemSku": "",
+              "productRange": "",
               "qty": 2,
               "price": 350.5,
               "amount": 701
@@ -156,7 +157,7 @@ GET /awbshipment?dateFrom=2026-08-01&dateTo=2026-08-31&page=1&pageSize=50
 
 ### Массив `invoices[].items[]`
 
-Структура элемента **как у `GET /invoices`**: `item`, `itemCode`, `itemSku`, `qty`, `price`, `amount`.
+Структура элемента **как у `GET /invoices`**: `item`, `itemCode`, `itemSku`, `productRange`, `qty`, `price`, `amount`.
 
 Заполняется **только если в строке ТЧ отправки заполнена поставка** (`delivery` > 0). Тогда в массив попадают строки ТЧ `Инвойс.Поставки` с тем же номером поставки:
 
@@ -165,6 +166,7 @@ GET /awbshipment?dateFrom=2026-08-01&dateTo=2026-08-31&page=1&pageSize=50
 | `item` | `Номенклатура` | Наименование |
 | `itemCode` | `Номенклатура.Код` | Код |
 | `itemSku` | `Номенклатура.SKU` | SKU |
+| `productRange` | `Номенклатура.Ассортимент.Наименование` | Наименование ассортимента; пустая строка, если не заполнен |
 | `qty` | `Поставки.Количество` | Количество в поставке |
 | `price` | `ВКД_Товары.ЦенаИнвойса` (если 0 — `Поставки.Цена`) | Цена в валюте инвойса |
 | `amount` | `price * qty` (если цена 0 — `Поставки.Сумма`) | Сумма |

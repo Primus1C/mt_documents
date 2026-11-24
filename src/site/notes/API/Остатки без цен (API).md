@@ -132,6 +132,7 @@ GET /leftover?brand=Apple
       "brandCode": "10",
       "itemSku": "SKU-001",
       "manufacturer": "Apple Inc.",
+      "productRange": "",
       "balance": "5",
       "reserve": "1"
     }
@@ -150,6 +151,7 @@ GET /leftover?brand=Apple
 | `brandCode` | Код группы бренда (строка) |
 | `itemSku` | Реквизит SKU |
 | `manufacturer` | Производитель (наименование) |
+| `productRange` | Наименование ассортимента номенклатуры; пустая строка, если не заполнен |
 | `balance` | Остаток на складе (строка) |
 | `reserve` | Резерв на складе (строка) |
 

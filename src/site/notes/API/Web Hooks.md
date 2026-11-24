@@ -142,6 +142,7 @@ Authorization: Bearer <WebhookToken>
 | `createdAt` | Дата постановки в очередь |
 | `itemCode` | Код номенклатуры (число без разделителей групп) |
 | `item` | Наименование номенклатуры |
+| `productRange` | Наименование ассортимента номенклатуры; пустая строка, если не заполнен. Есть, если заполнена номенклатура события |
 | `warehouse` | Код склада |
 | `warehouseName` | Наименование склада |
 | `source` | Представление документа-инициатора (если заполнен) |
@@ -168,6 +169,7 @@ Authorization: Bearer <WebhookToken>
       "createdAt": "2026-08-18T12:00:01",
       "itemCode": "12345",
       "item": "Товар А",
+      "productRange": "",
       "warehouse": "1",
       "warehouseName": "Основной",
       "balance": "10",
@@ -201,6 +203,7 @@ Authorization: Bearer <WebhookToken>
       "createdAt": "2026-08-18T12:10:01",
       "itemCode": "12345",
       "item": "Товар А",
+      "productRange": "",
       "warehouse": "1",
       "warehouseName": "Основной",
       "priceType": "Розница",

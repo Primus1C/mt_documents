@@ -135,6 +135,7 @@ GET /incomingwaybills?dateFrom=2026-08-01&dateTo=2026-08-31
         {
           "item": "iPhone 15",
           "itemCode": "10045",
+          "productRange": "",
           "qty": 1,
           "price": 350.5,
           "amount": 350.5,
@@ -287,6 +288,7 @@ GET /incomingwaybills?dateFrom=2026-08-01&dateTo=2026-08-31
     {
       "item": "iPhone 15",
       "itemCode": "10045",
+      "productRange": "",
       "qty": 1,
       "price": 36500,
       "amount": 36500,
@@ -295,6 +297,7 @@ GET /incomingwaybills?dateFrom=2026-08-01&dateTo=2026-08-31
     {
       "item": "iPhone 15",
       "itemCode": "10045",
+      "productRange": "",
       "qty": 1,
       "price": 36000,
       "amount": 36000,
@@ -303,6 +306,7 @@ GET /incomingwaybills?dateFrom=2026-08-01&dateTo=2026-08-31
     {
       "item": "Cable USB-C",
       "itemCode": "20010",
+      "productRange": "",
       "qty": 5,
       "price": 12,
       "amount": 60,

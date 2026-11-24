@@ -83,6 +83,7 @@
             "itemUpc": "",
             "itemJan": "",
             "manufacturer": "",
+            "productRange": "",
             "balance": "94",
             "reserve": "0",
             "price": [
@@ -122,6 +123,7 @@
 | `itemUpc` | UPC |
 | `itemJan` | JAN13 |
 | `manufacturer` | производитель |
+| `productRange` | наименование ассортимента номенклатуры; пустая строка, если не заполнен |
 | `balance` | остаток на складе |
 | `reserve` | резерв заказов |
 | `price` | массив всех цен; каждый элемент — `priceType`, `currency`, `prices[]` |
@@ -158,6 +160,7 @@
             "itemUpc": "",
             "itemJan": "",
             "manufacturer": "",
+            "productRange": "",
             "balance": "94",
             "reserve": "0",
             "priceType": "Крупный опт",
@@ -179,6 +182,7 @@
             "itemUpc": "",
             "itemJan": "",
             "manufacturer": "",
+            "productRange": "",
             "balance": "3",
             "reserve": "0",
             "priceType": "Крупный опт",
